@@ -1,0 +1,130 @@
+body {
+	background-color: rgb(18,92, 255);
+	background-image: url("seawater.jpeg");
+	margin: 0;
+	padding: 0;
+}
+*{
+	box-sizing: border-box;
+}
+
+.quiz-wrapper{
+	height: 400px;
+	width: 600px;
+	background-color: rgba(50,162,251,1.00);
+	margin: 70px auto;
+	border-radius: 8px;
+	padding: 25px;
+}
+
+.quiz-wrapper .question{
+	min-height: 50px;
+	background-color:rgba(50,162,251,1.00);
+	border-radius: 8px;
+	color:#eaffff;
+	padding: 15px;
+	float: left;
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.quiz-wrapper .options{
+	float: left;
+	width: 100%;
+}
+
+.quiz-wrapper .options ul{
+	list-style: none;
+	padding: 0%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.quiz-wrapper .options ul li{
+	display: inline-block;
+	background-color: rgba(32,196,180,1.00);
+	width: 46%;
+	padding: 15px;
+	border-radius: 20px;
+	margin-bottom: 1rem;
+	margin: 10px;
+	font-family: bold;
+	text-align: center;
+	color:rgb(2, 12, 20);
+	cursor: pointer;
+	
+}
+
+.quiz-wrapper .options ul li.correct{
+	background-color: rgb(76, 226, 101);
+	box-shadow: 0px 3px 0px grey;
+}
+
+.quiz-wrapper .options ul li.wrong{
+	background-color: rgb(233, 18, 10);
+	box-shadow: 0px 3px 0px grey;
+}
+
+.quiz-wrapper .options ul li:active{
+	box-shadow: 0px 0px 0px rgb(84, 110, 179);
+}
+.quiz-wrapper .score {
+	float:left;
+	width: 100%;
+}
+
+.quiz-wrapper .score .next{
+	width: 40;
+	float:left;
+
+}
+.quiz-wrapper .score .next button{
+	padding: 10px 70px;
+	color: white;
+	background-color: rgb(18,92, 255);
+	border:none;
+	border-radius: 20px;
+	box-shadow: 0px 3px 0px grey;
+	font-size: 20px;
+
+}
+
+.quiz-wrapper .score .score-card{
+	width: 60%;
+	float: right;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.quiz-wrapper .score .score-card span{
+	background-color:rgb(18,92, 255);
+	padding: 5px 20px;
+	border: none;
+	color: white;
+	border-radius: 8px;
+}
+
+.options ul li:hover{
+	cursor:pointer;
+	color: hsl(0, 0%, 0%);
+	box-shadow: 0 0.4rem 1.4rem 0 rgb(111, 233, 217);
+	transition-duration: 1.0s;
+	transition: transform 150ms;
+	transform: scale(1.03);}
+	
+	#options ul li:active{
+		font-size: 20px;
+	}
+	
+	#summary-btn{
+		display:disabled; 
+		display: none;
+	}
+
+	.h3{
+		color:white;
+	}
