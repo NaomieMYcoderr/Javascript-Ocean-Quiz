@@ -95,7 +95,6 @@ window.load=app.load();
 function button(ele){
     app.check(ele);
     app.preventClick();
-    return window.location.assign('/end.html')
 }
 
 function next(){
